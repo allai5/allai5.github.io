@@ -4,12 +4,32 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Junior in ECE at Carnegie Mellon with emphasis on Robotics and Computer
+Graphics.  Interested in SLAM, computer vision, rendering, and 3D animation.
 
-### More Information
+Currently robotics engineering intern at KEF Robotics.
+This Summer 2021 I will be working at Waymo as an intern on the Mapping team.
 
-A place to include any other types of information that you'd like to include about yourself.
+### Projects
+
+
+#### DOOM Over Oscilloscope Monitor
+#### Depth From Defocus in the Wild
+#### Scotty3D (+ Documentation revamp)
+
+### Courses Taken (* = currently taking)
+
+  - 15-462 Computer Graphics
+  - 15-463 Computational Photography
+  - 15-464 Technical Animation*
+  - 15-468 Physically Based Rendering*
+  - 15-458 Discrete Differential Geometry*
+  - 16-833 SLAM
+  - 18-213 Intro to Computer Systems
+  - 18-220 Electronic Devices and Analog Circuits*
+  - 18-240 Structure and Design of Digital Systems
+  - 60-125 Intro to 3D Animation
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[alicel@andrew.cmu.edu](mailto:alicel@andrew.cmu.ed)
