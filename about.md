@@ -10,14 +10,7 @@ Graphics.  Interested in SLAM, computer vision, rendering, and 3D animation.
 Currently robotics engineering intern at KEF Robotics.
 This Summer 2021 I will be working at Waymo as an intern on the Mapping team.
 
-### Projects
-
-
-#### DOOM Over Oscilloscope Monitor
-#### Depth From Defocus in the Wild
-#### Scotty3D (+ Documentation revamp)
-
-### Courses Taken (* = currently taking)
+### Courses Taken (* = Spring 2021)
 
   - 15-462 Computer Graphics
   - 15-463 Computational Photography
@@ -29,6 +22,13 @@ This Summer 2021 I will be working at Waymo as an intern on the Mapping team.
   - 18-220 Electronic Devices and Analog Circuits*
   - 18-240 Structure and Design of Digital Systems
   - 60-125 Intro to 3D Animation
+
+### Projects
+
+
+#### DOOM Over Oscilloscope Monitor
+#### Depth From Defocus in the Wild
+#### Scotty3D (+ Documentation revamp)
 
 ### Contact me
 
