@@ -3,7 +3,20 @@ layout: post
 title: 15-464 Technical Animation
 ---
 
-### Lecture 2: Techniques for Creating Animation
+### Lecture 2: Techniques for Creating Animation (cont.)
+The cyclic coordinate descent IK algorithm was quite interesting. I'm guessing
+the optimization procedure implicitly encodes the Jacobian(s), but it was
+definitely intriguing to see how you could have an IK algorithm without ever
+having to explicitly define the Jacobians, especially for applications where you
+have very little information. Here's a cool paper on using cyclic coordinate
+descent for protein loop closure: [paper link](https://pubmed.ncbi.nlm.nih.gov/12717019/).
+
+The Cartoon Animation filter also made a good impression on me. I wonder if
+we'll be able to have some general translation capabilities, e.g. from motion capture data
+--> cartoon characters/different 3D models using a single filter such as the
+Cartoon Motion Filter. Will update this post when I find out more.
+
+### Lecture 1: Techniques for Creating Animation
 
 Most of this lecture was familiar material for me, as I've previously taken
 [60-125: Introduction to 3D Animation](http://cmuanimation.weebly.com/).
