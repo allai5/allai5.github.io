@@ -3,6 +3,56 @@ layout: post
 title: 15-464 Technical Animation
 ---
 
+### Lecture 5: Skinning
+Today we looked at some recent advances in "smart" skinning. We took a look at
+RigNet and NeuroSkinning, both recent papers using learned methods to do
+skinning.
+
+It seemed to me that RigNet was simply using BoneNet and MST to come up with
+the skeletal structure, and then using GMEdgeNet to do the rest of the heavy
+lifting. The main challenge of rigging is skinning weights, so I'm wondering
+if this approach could be modified such that an artist defines the skeleton
+(i.e. takes the place of BoneNet and MST) and just have a multi-level GMEdgeNet
+inference scheme to predict the skin weights.
+
+We also took a look at NeuroSkinning, a SIGGRAPH 2019 paper. We didn't go too much
+into detail with the technical aspects of this paper, but one thing I noticed
+was that the models they were working with had distinctively complicated,
+flowing cloth around the 3D character body. It seems like learning-based
+approaches work well to approximate high-dimensional character deformations, so
+I'm wondering if this paper looked at applying their deep graph networks to
+"simpler" models.
+
+We then touched base on a high-level overview of skinning methods, i.e.
+physics-based, example-based, and geometry-based skinning methods. I am already
+familiar with linear blend skinning (LBS) and dual quaternion skinning (DQS)
+from my 3D animation class as wellas 15-462, but one thing I noticed was that
+these 3 classes of methods also appear in robotics. Definitely really cool that
+there is so much overlap between robotics and comptuer graphics.
+
+### Lecture 4: Inverse Kinematics (cont.)
+
+Today we covered more inverse kinematics papers. Two main papers that stood out
+to me were FABRIK and Mesh IK.
+
+For FABRIK, Instead of finding rotation matrices for each
+joint angle to calculate joint positions, FABRIK instead finds the joint positions
+by solving the inverse kinematics problem as finding a point on a line. It was
+impressive to me that FABRIK could simultaneously by 10x faster than CCD and
+1000x faster than Jacobian methods while producing seemingly good results. On a side note, it seems
+to me that the trend of inverse kinematics papers that we've been covering in
+this class is steadily pointing towards those that don't have to calculate the
+Jacobians explicitly.
+
+For Mesh IK, I found the idea of learning to deform meshes without rigs super interesting. Having done 3D animation and
+more specifically rigging and weight painting, *correct* deformation of a 3D
+mesh has always seemed very challenging to me.  Reinforcement learning and other
+learning-based techniques are also being used in 3D animation, namely to generate
+realistic character motion and as motion controllers. I'd be interested in a
+generalized learning based approach to inverse kinematics, since I would imagine
+that the deformation characteristics of 3D characters don't vary too much within
+a certain style of animation.
+
 ### Lecture 3: Inverse Kinematics
 Talking a little bit more on the Cyclic Coordinate Descent IK algorithm and just
 generally talking about Jacobians was nice. I was already familiar with Jacobian
