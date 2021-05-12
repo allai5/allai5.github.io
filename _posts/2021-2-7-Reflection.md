@@ -3,7 +3,123 @@ layout: post
 title: 15-464 Technical Animation
 ---
 
-### Lecture 5: Skinning
+### Lecture 26: Learning
+TODO
+
+### Lecture 25: More Character Simulation
+We went over this paper today:
+http://calab.hanyang.ac.kr/papers/flexLoco.html
+
+### Lecture 24: Character Simulation
+TODO
+
+### Lecture 23: Human Body
+TODO
+
+### Lecture 22: Faces
+TODO
+
+### Lecture 21: Paper Session IV
+TODO
+
+### Lecture 20: Deformables
+TODO
+
+### Lecture 19: Paper Session III
+I presented the paper: A Practical Octree Liquid Simulator With Adaptive Surface Resolution
+by Ryoichi Ando and Christopher Batty.
+
+Presentation: https://docs.google.com/presentation/d/1zY2X1k7xijIj54G-MsUvgtDtAX3RoaoV-HaeBR79uUA/edit?usp=sharing
+
+### Lecture 18: More Fluids
+TODO
+
+### Lecture 17: Fluids
+TODO
+#### Eulerian Finite Difference Based Approach to Solving Navier-Stokes
+
+#### Stable Fluids
+
+### Lecture 16: Mini-Project 2
+I implemented most of UC Berkeley's CS248 Cloth Simulation Assignment, save for
+self-collisions.
+
+Presentation: https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing
+
+### Lecture 15: More Final Project Pitches + Extra Content
+TODO
+
+### Lecture 14: Final Project Pitches
+I am working with Max Slater for the final project on Position-Based Fluids:
+
+Project Proposal: https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing
+
+### Lecture 13: Paper Session II
+TODO
+
+### Lecture 12: Final Projects & Rigid Bodies
+TODO
+
+### Lecture 11: More Cloth
+TODO
+
+### Lecture 10: Simulation nd Cloth
+Went over forward/implicit/symplectic Euler, Verlet, Runge-Katta (RK4)
+integration techniques. RK4 is also used in robotics!
+TODO
+
+### Lecture 9: Mini-Project 1
+I worked with Vaishnavi Mantha for Mini-Project 1. We implemented 2 walk cycles
+in Maya and manipulated mocap data to do 2 walk cycles as well.
+
+Presentation: https://docs.google.com/presentation/d/1uEzvJX7l8llxU9FsBGPgvWK5CkDQP1jMyTQbVxE1aos/edit?usp=sharing
+
+### Lecture 8: Motion Matching
+I've always been quite skeptical of the concept of motion matching. A similar
+concept in robotics is reinforcement learning for motions, i.e. training a
+neural network to learn a policy for robotic motion. Often times it fails due to
+the high-dimensionality nature of the state space.
+
+https://montreal.ubisoft.com/en/introducing-learned-motion-matching/
+
+The main idea of this motion matching paper is that they only look up the relevant
+animation features and use the Decompressor neural network to extract the pose
+rather than doing a lookup into the pose database.
+
+One thing that I liked about this paper is that they did leverage IK for their
+character animation, rather than entirely relying on feature matching.
+"We add 47 new joints to our character to include hands and fingers, and add
+around 30 new styles of locomotion to our data set" definitely checks out, and
+I'm glad Ubisoft did their due diligence to trying to mimick such complex
+motions.
+
+Overall this paper was quite impressive and I was especially impressed by the
+amount of complexity involved. I still saw some artifacts in their video demos,
+but I'm definitely curious on where researchers can go from here to make motion
+matching even better.
+
+### Lecture 7: Paper Session I
+#### Motion Tracking
+Sort of a pedantic note, but it seems like a lot of Facebook AI research is just
+chaining a bunch of neural networks together with good data and a large amount
+of compute. Regardless, the results are qutie impressive, and the video demo is
+certainly very compelling.
+
+#### Stop Motion
+Stop motion is pretty cool, especially since it does away with the production
+costs of having to render every frame. I'm concerned about the visuals of the
+seams between different 3D printed parts, though this is addressed in the paper.
+Maybe some sort of nifty post-processing effects specifically for this problem?
+
+#### Motion Graphs
+Not too many thoughts here, results weren't that compelling.
+
+#### Motion Retargeting
+General idea here is to decouple shape from motion, i.e. neural compression
+towards a generalized simplified primal skeleton. Pretty basic idea, pretty cool
+results.
+
+### Lecture 6: Rigging & Skinning
 Today we looked at some recent advances in "smart" skinning. We took a look at
 RigNet and NeuroSkinning, both recent papers using learned methods to do
 skinning.
@@ -30,7 +146,7 @@ from my 3D animation class as wellas 15-462, but one thing I noticed was that
 these 3 classes of methods also appear in robotics. Definitely really cool that
 there is so much overlap between robotics and comptuer graphics.
 
-### Lecture 4: Inverse Kinematics (cont.)
+### Lecture 4 & 5: Inverse Kinematics (cont.)
 
 Today we covered more inverse kinematics papers. Two main papers that stood out
 to me were FABRIK and Mesh IK.
