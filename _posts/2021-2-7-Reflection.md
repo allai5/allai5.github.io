@@ -44,7 +44,7 @@ TODO
 I implemented most of UC Berkeley's CS248 Cloth Simulation Assignment, save for
 self-collisions.
 
-Presentation: https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing
+[Presentation](https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing)
 
 ### Lecture 15: More Final Project Pitches + Extra Content
 TODO
@@ -52,7 +52,7 @@ TODO
 ### Lecture 14: Final Project Pitches
 I am working with Max Slater for the final project on Position-Based Fluids:
 
-Project Proposal: https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing
+[Project Proposal](https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing)
 
 ### Lecture 13: Paper Session II
 TODO
@@ -66,13 +66,12 @@ TODO
 ### Lecture 10: Simulation nd Cloth
 Went over forward/implicit/symplectic Euler, Verlet, Runge-Katta (RK4)
 integration techniques. RK4 is also used in robotics!
-TODO
 
 ### Lecture 9: Mini-Project 1
 I worked with Vaishnavi Mantha for Mini-Project 1. We implemented 2 walk cycles
 in Maya and manipulated mocap data to do 2 walk cycles as well.
 
-Presentation: https://docs.google.com/presentation/d/1uEzvJX7l8llxU9FsBGPgvWK5CkDQP1jMyTQbVxE1aos/edit?usp=sharing
+[Presentation](https://docs.google.com/presentation/d/1uEzvJX7l8llxU9FsBGPgvWK5CkDQP1jMyTQbVxE1aos/edit?usp=sharing)
 
 ### Lecture 8: Motion Matching
 I've always been quite skeptical of the concept of motion matching. A similar
@@ -102,7 +101,7 @@ matching even better.
 #### Motion Tracking
 Sort of a pedantic note, but it seems like a lot of Facebook AI research is just
 chaining a bunch of neural networks together with good data and a large amount
-of compute. Regardless, the results are qutie impressive, and the video demo is
+of compute. Regardless, the results are quite impressive, and the video demo is
 certainly very compelling.
 
 #### Stop Motion
