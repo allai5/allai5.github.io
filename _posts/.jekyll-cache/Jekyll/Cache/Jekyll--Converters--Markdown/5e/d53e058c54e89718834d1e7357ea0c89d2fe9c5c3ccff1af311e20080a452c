@@ -1,0 +1,36 @@
+I"�	<h3 id="lecture-2-techniques-for-creating-animation-cont">Lecture 2: Techniques for Creating Animation (cont.)</h3>
+<p>The cyclic coordinate descent IK algorithm was quite interesting. I’m guessing
+the optimization procedure implicitly encodes the Jacobian(s), but it was
+definitely very cool to see how you could have an IK algorithm without ever
+having to explicitly define the Jacobians, especially for applications where you
+have very little information. Here’s a cool paper on using cyclic coordinate
+descent for protein loop closure: <a href="https://pubmed.ncbi.nlm.nih.gov/12717019/">paper link</a>.</p>
+
+<p>The Cartoon Animation filter . I wonder if we’ll be able to easily translate
+from motion capture data do motion data stylized for all sorts of different applications.</p>
+<h3 id="lecture-1-techniques-for-creating-animation">Lecture 1: Techniques for Creating Animation</h3>
+
+<p>Most of this lecture was familiar material for me, as I’ve previously taken
+<a href="http://cmuanimation.weebly.com/">60-125: Introduction to 3D Animation</a>.
+Nonetheless, it was nice to see the main types of 3D animation techniques
+(Keyframe, Procedural, Physics-based, Motion Capture) formally presented, since
+until now I’ve just learned about them through conversation.</p>
+
+<p>Motion VAEs (MVAE), or <em>autoregressive conditional variational autoencoders</em>,
+were new to me however. <strong>Autoencoders</strong> are neural networks that leverage
+unsupervised learning in order to efficiently represent some set of input data.
+In particular, they output a singular value for each state attribute.
+<strong>Variational autoencoders</strong> are autoencoders that describe a probability
+distribution, rather than a value, for each state attribute.</p>
+
+<center><img src="../images/model_VAE.png" style="height:350px" /></center>
+<center><span style="font-size:10px">Source: https://medium.com/deepgamingai/learning-sports-motions-with-autoregressive-variational-autoencoders-e89599d4cfd</span></center>
+
+<p>I wonder if they’re similar to Model-Predictive Controllers? Will update this
+post when I figure that out.
+It’s awesome to see that this class touches upon so many different fields. This
+past weekend I’ve been brushing up on the basics of fluid dynamics, since my
+final paper presentation is on <a href="https://cs.uwaterloo.ca/~c2batty/papers/Ando2020/Ando2020.pdf">A Practical Octree Liquid Simulator With Adaptive
+Surface Resolution</a>.
+Looking forward to an amazing semester!</p>
+:ET

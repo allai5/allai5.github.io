@@ -29,7 +29,7 @@ TODO
 I presented the paper: A Practical Octree Liquid Simulator With Adaptive Surface Resolution
 by Ryoichi Ando and Christopher Batty.
 
-Presentation: https://docs.google.com/presentation/d/1zY2X1k7xijIj54G-MsUvgtDtAX3RoaoV-HaeBR79uUA/edit?usp=sharing
+[Presentation:] (https://docs.google.com/presentation/d/1zY2X1k7xijIj54G-MsUvgtDtAX3RoaoV-HaeBR79uUA/edit?usp=sharing)
 
 ### Lecture 18: More Fluids
 TODO
@@ -58,14 +58,53 @@ I am working with Max Slater for the final project on Position-Based Fluids:
 TODO
 
 ### Lecture 12: Final Projects & Rigid Bodies
-TODO
+Final projects look cool, looking forward to seeing what everyone does!
+
+I didn't consider that parallelization could be leveraged for much better
+results. I'm wondering if we could adopt a Russian-Roulette scheme for spatial
+locality to avoid bias in the partitioning?
+
+More impulse-based collision handling.
 
 ### Lecture 11: More Cloth
-TODO
+Gotta say that the impulse collision handling paper is also a very likable paper
+for me ;) this is such a great idea! In general I'm beginning to learn that
+there is quite a significant difference between "physically-based" and "physically-motivated". I'm wondering how this framework would work with rips in the cloth, since here the collisions are super important and should not be avoided. I could also definitely see this in production for some 3D animation film, since this scheme seems to work pretty reliably.
 
-### Lecture 10: Simulation nd Cloth
+For the "Estimating Cloth Simulation Parameters from Video" paper,
+the "knit" result was less compelling than the others due to the absence of the
+actual texture of the cloth, but otherwise the results were awesome!
+
+The use of structured light to eliminate lighting/BRDF effects was very nice. In
+general this was a well-thought out paper and I'm quite impressed. A lot of the
+other papers in this class use some form of deep learning to further optimize
+results, I'm wondering if that's a possible extension here with formulating an
+even better loss function?
+
+### Lecture 10: Simulation and Cloth
 Went over forward/implicit/symplectic Euler, Verlet, Runge-Katta (RK4)
 integration techniques. RK4 is also used in robotics!
+
+The Large Steps in Cloth Simulation paper was pretty cool, it's awesome that
+the authors can claim that numerical stability is not an issue for them, it
+seems like large time steps with reasonable constraints is the way to go.
+
+The unified particle physics paper is pretty relevant to the position based
+fluid simiulation I'm doing with Max (Matthias Muller is everywhere, what a
+legend). I think this idea of a unified simulation is very exciting, especially
+since the paper that I presented on (the Octree Fluid simulation paper) had very
+complex ideas/data structures for accounting for fluid/solid fluid/area
+fluid/fluid interfaces. Again, a flexible framework with constraints seems to be
+a good choise for simulation here.
+
+The signed distance function collision algorithm was interesting, Max is
+planning to just project the velocity and use the built-in ray tracer to due
+collision detection, but I'm wondering if a shader with SDF-based collision
+would improve both computational performance as well as the fluid render
+quality.
+
+The results from the unified particle physics paper are very compelling to say
+the least, I've gotta say I'm a fan of Matthias Muller's work :D
 
 ### Lecture 9: Mini-Project 1
 I worked with Vaishnavi Mantha for Mini-Project 1. We implemented 2 walk cycles

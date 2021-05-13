@@ -1,0 +1,95 @@
+I"�<h3 id="lecture-4-inverse-kinematics-cont">Lecture 4: Inverse Kinematics (cont.)</h3>
+
+<p>Today we covered more inverse kinematics papers. Two main papers that stood out
+to me were FABRIK and Mesh IK.</p>
+
+<p>For FABRIK, Instead of finding rotation matrices for each
+joint angle to calculate joint positions, FABRIK instead finds the joint positions
+by solving the inverse kinematics problem as finding a point on a line. It was
+impressive to me that FABRIK could simultaneously by 10x faster than CCD and
+1000x faster than Jacobian methods while producing seemingly good results. On a side note, it seems
+to me that the trend of inverse kinematics papers that we’ve been covering in
+this class is steadily pointing towards those that don’t have to calculate the
+Jacobians explicitly.</p>
+
+<p>For Mesh IK, I found the idea of learning to deform meshes without rigs super interesting. Having done 3D animation and
+more specifically rigging and weight painting, <em>correct</em> deformation of a 3D
+mesh has always seemed very challenging to me.  Reinforcement learning and other
+learning-based techniques are also being used in 3D animation, namely to generate
+realistic character motion and as motion controllers. I’d be interested in a
+generalized learning based approach to inverse kinematics, since I would imagine
+that the deformation characteristics of 3D characters don’t vary too much within
+a certain style of animation.</p>
+
+<h3 id="lecture-3-inverse-kinematics">Lecture 3: Inverse Kinematics</h3>
+<p>Talking a little bit more on the Cyclic Coordinate Descent IK algorithm and just
+generally talking about Jacobians was nice. I was already familiar with Jacobian
+transpose IK from 15-462: Computer Graphics, and in fact did not know that there
+were other ways of doing IK, so these past 2 classes have been somewhat
+eye-opening.</p>
+
+<p>Reading the <a href="http://www.virtualpuppetry.com/inverse_kinematics_ccd/paper.pdf">CCD paper</a> and also having it presented to me during class, I realize
+that I haven’t really been considering the
+visual/artistic consequences of CG algorithms. This is sort of a trivial
+insight, but manipulating the order in which you update the joint chain in
+order to produce certain effects that shape a 3D character was kind of amazing
+to me; I imagine that 3D animation studios probably tend towards updating the
+ends of the joint chains more so than the base joints, since you can encode so
+much emotion and character in the hands and the fingers.</p>
+
+<center><img src="../images/pixar_lamp.jpg" style="height:350px" /></center>
+<center><span style="font-size:10px">Source: https://www.artstation.com/artwork/LXRz0
+</span></center>
+
+<p>I had also never considered using a recursive optimization scheme (i.e.
+“Bouncing”) in IK, though upon reflection it seems like a fairly straightforward
+idea. An interesting thing to note is that Levenberg-Marquadt (Damped Least-Squares)
+is used in both IK robotics applications as well SLAM robotics problems. In a
+way, I’m guessing you can model time series data in SLAM applications just like
+a really long/complex joint hierarchy; each joint is a keyframe observation, and
+since the robot is using the information at each “joint” to localize itself and
+update the map, these keyframes are connected as a chain.  Not sure if this insight is particularly innovative, but that was a fairly good highlight of the day for me. Nonlinear optimization techniques are truly universal.</p>
+
+<p>I might try to add some new IK techniques, such as CCD, any of the modified CCD
+techniques, Inverse Jacobian methods, etc. to the 15-462 Computer Graphics
+codebase (if le Max Slater doesn’t implement everything first lol).</p>
+
+<h3 id="lecture-2-techniques-for-creating-animation-cont">Lecture 2: Techniques for Creating Animation (cont.)</h3>
+<p>The cyclic coordinate descent IK algorithm was quite interesting. I’m guessing
+the optimization procedure implicitly encodes the Jacobian(s), but it was
+definitely intriguing to see how you could have an IK algorithm without ever
+having to explicitly define the Jacobians, especially for applications where you
+have very little information. Here’s a cool paper on using cyclic coordinate
+descent for protein loop closure: <a href="https://pubmed.ncbi.nlm.nih.gov/12717019/">paper link</a>.</p>
+
+<p>The Cartoon Animation filter also made a good impression on me. I wonder if
+we’ll be able to have some general translation capabilities, e.g. from motion capture data
+–&gt; cartoon characters/different 3D models using a single filter such as the
+Cartoon Motion Filter. Will update this post when I find out more.</p>
+
+<h3 id="lecture-1-techniques-for-creating-animation">Lecture 1: Techniques for Creating Animation</h3>
+
+<p>Most of this lecture was familiar material for me, as I’ve previously taken
+<a href="http://cmuanimation.weebly.com/">60-125: Introduction to 3D Animation</a>.
+Nonetheless, it was nice to see the main types of 3D animation techniques
+(Keyframe, Procedural, Physics-based, Motion Capture) formally presented, since
+until now I’ve just learned about them through conversation.</p>
+
+<p>Motion VAEs (MVAE), or <em>autoregressive conditional variational autoencoders</em>,
+were new to me however. <strong>Autoencoders</strong> are neural networks that leverage
+unsupervised learning in order to efficiently represent some set of input data.
+In particular, they output a singular value for each state attribute.
+<strong>Variational autoencoders</strong> are autoencoders that describe a probability
+distribution, rather than a value, for each state attribute.</p>
+
+<center><img src="../images/model_VAE.png" style="height:350px" /></center>
+<center><span style="font-size:10px">Source: https://medium.com/deepgamingai/learning-sports-motions-with-autoregressive-variational-autoencoders-e89599d4cfd</span></center>
+
+<p>I wonder if they’re similar to Model-Predictive Controllers? Will update this
+post when I figure that out.
+It’s awesome to see that this class touches upon so many different fields. This
+past weekend I’ve been brushing up on the basics of fluid dynamics, since my
+final paper presentation is on <a href="https://cs.uwaterloo.ca/~c2batty/papers/Ando2020/Ando2020.pdf">A Practical Octree Liquid Simulator With Adaptive
+Surface Resolution</a>.
+Looking forward to an amazing semester!</p>
+:ET
