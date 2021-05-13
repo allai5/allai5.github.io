@@ -32,13 +32,35 @@ by Ryoichi Ando and Christopher Batty.
 [Presentation:] (https://docs.google.com/presentation/d/1zY2X1k7xijIj54G-MsUvgtDtAX3RoaoV-HaeBR79uUA/edit?usp=sharing)
 
 ### Lecture 18: More Fluids
-TODO
+The Advection Reflection Solver paper seems pretty awesome, the idea of choosing
+an alternative solution on the manifold that is more desirable is cool. It's
+kind of unfortunate that it takes nearly twice as long as the non-reflection
+solver though. I would have been interested in a comparison between using the
+advection reflection solver and the conventional advection solver with the
+artificial vorticity confinement.
+
+PIC/FLIP is nifty too, I generally like the idea of hybrid approaches to combine
+the strengths of Lagrangian and Eulerian fluid systems. I want to implement
+PIC/FLIP fluid solver over the summer for a project.
+
+Fun fact, this guy went to my high school!
+https://github.com/austinEng/WebGL-PIC-FLIP-Fluid
 
 ### Lecture 17: Fluids
-TODO
-#### Eulerian Finite Difference Based Approach to Solving Navier-Stokes
+After some additional reading, I think I *finally* understand the Navier-Stokes
+Equations: The LHS terms represent the convection of the fluid, and the RHS
+equation represents the diffusion of the fluid. The partial derivatives with two
+variables confused me at first, but I think I just need to review 3D Calculus
+here.
 
-#### Stable Fluids
+The Foster paper broke down the algorithm for solving the Navier-Stokes pretty
+clearly. I think it could have been made a bit clearer in pseudocoe form but
+definitely will refer back to this in the future if I want to do more
+non-position based fluid simulation.
+
+The Jos Stam "Real-Time Fluid Dynamics" paper was nifty, I liked the diagram for
+the basic structure of the density solver. Particle-based ideas for fluid
+simulation are everywhere!
 
 ### Lecture 16: Mini-Project 2
 I implemented most of UC Berkeley's CS248 Cloth Simulation Assignment, save for
@@ -47,7 +69,11 @@ self-collisions.
 [Presentation](https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing)
 
 ### Lecture 15: More Final Project Pitches + Extra Content
-TODO
+More SDF collision detection, but this time for cloth. Perhaps simulation
+techniques are moving towards implicit representations along with position bsaed
+techniques?
+
+Physics based character motion seems cooler than motion matching.
 
 ### Lecture 14: Final Project Pitches
 I am working with Max Slater for the final project on Position-Based Fluids:
@@ -55,7 +81,20 @@ I am working with Max Slater for the final project on Position-Based Fluids:
 [Project Proposal](https://docs.google.com/presentation/d/1-tU_UICYNA3KLXLsrOzVfn5IgqjLY78sUKG-NWB8ETU/edit?usp=sharing)
 
 ### Lecture 13: Paper Session II
-TODO
+More constraint-based simulation :0
+
+Collision culling is a pretty natural idea, and the avoidance of a vertex
+displacement constraint is interesting. Emma's paper is pretty dense and I
+haven't taken 15-418 yet so I won't comment too much on this one.
+
+"Adaptive Merging for Rigid Body Simulation" is certainly a very innovative
+idea, but I worry about clumping artifacts. I'd be interested in applying a
+merging concept to fluid simulation, maybe there could be a timestep-based
+heuristic for applying this merging/clumping. Like for instance if we have a
+fountain fluid scenario, the merging rigid body idea could probably work well at
+the very beginning when all the particles are shooting upwards or something.
+
+Pretty familiar with Position Based Dynamics at this point.
 
 ### Lecture 12: Final Projects & Rigid Bodies
 Final projects look cool, looking forward to seeing what everyone does!
@@ -73,7 +112,7 @@ there is quite a significant difference between "physically-based" and "physical
 
 For the "Estimating Cloth Simulation Parameters from Video" paper,
 the "knit" result was less compelling than the others due to the absence of the
-actual texture of the cloth, but otherwise the results were awesome!
+actual texture of the cloth, but otherwise the results were awesome.
 
 The use of structured light to eliminate lighting/BRDF effects was very nice. In
 general this was a well-thought out paper and I'm quite impressed. A lot of the
