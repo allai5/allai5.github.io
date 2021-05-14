@@ -10,20 +10,65 @@ TODO
 We went over this paper today:
 http://calab.hanyang.ac.kr/papers/flexLoco.html
 
+This paper presents a 3-tier approach to motion planning. The first stage is the
+motion sketch generator based on the IPC model, producing a "rough" sketch,
+which then feeds into the CDM plan generator that uses a CDM to generate more
+detailed behiavors. Finally, this CDM plan then feeds into a full-body motion
+generator (using momentum-mapped inverse kinematics).
+
+I wonder if Pacejka's Tire/Bicycle Model could be in considered in addition to
+the CDM and inverted pendulum models? Did some preliminary readings on that for
+torque vector controls stuff for Carnegie Mellon Racing during my freshman
+year...
+
 ### Lecture 24: Character Simulation
-TODO
+Jessica Hodgins is also everywhere.
+
+I generally like this idea of using an actual controller to motivate joint and
+limb motions. It's sort of like an ode to the adage "don't fix what ain't broken". Control theory is proving to be pretty useful. The FSM for walking in the SIMIBCON paper is a good idea, it more or less models what 3D animators do for walk cycles (or maybe the other way around? :P)
+
+The learned appraoch to character motion hits pretty close to home for me, as I
+am an avid dancer in my free time. The six-step BBoy motions were pretty sick.
+Definitely one of the most compelling demos I've seen for character motion.
 
 ### Lecture 23: Human Body
-TODO
+The Hand Modeling and Simulation Using Stabilized MRI paper was dope, I think
+this is the first time I've seen such high-quality real-life data being used for
+a simulation/computer graphics paper.  I'm surprised that lifecasting was treated as a novel idea in this paper though,it is a pretty common idea (in my opinion at least) in terms of
+replicating the human body. I wonder if you could leverage volumetric rendering
+or something to address the issues posed in MRI images (i.e. unclear and fuzzy
+bone boundaries, inhomogeneous bone tissue intensity, etc.)
 
 ### Lecture 22: Faces
-TODO
+The use of differentiable rendering for generating 3D avatars seems pretty
+natural to me, it's definitely a rendering technique that I'm personally very
+interested in (along with DVS camera sensors). This was a pretty content-dense
+paper so I don't really have too many good insights at the moment.
 
-### Lecture 21: Paper Session IV
+I think one thing to consider when designing VR headsets is the extent to which
+the product designers can effectively place sensors on a subject's face. The HMC
+setup in the Facebook VR paper had 9 cameras, and some of the related work even
+mentioned the use of strain gauges and RGBD sensors.
+
+The audio to video paper is super cool, though the ethical considerations of
+this is definitely tricky. On a lighter note, I recently did a project with some
+friends on rendering images to an oscilloscope by converting images --> sound
+waves. I'm wondering if there could be a way to extend this project to go from
+image --> sound waves, and then somehow regenerate a face from those sound waves
+again...probably not very possible but that would be so cool.
+
+### Lecture 21: Paper Session IV and More Deformables
 TODO
 
 ### Lecture 20: Deformables
-TODO
+I made these using Monster Mash! Still somewhat limited, but definitely a cool
+demo.
+
+<center><img src="../images/failed1.png" style="height:350px"></center>
+<center><img src="../images/yay.png" style="height:350px"></center>
+
+I feel like I should take a MechE class on fluids and/or stress analysis, seems
+like that knowledge would be very helpful for simulation projects.
 
 ### Lecture 19: Paper Session III
 I presented the paper: A Practical Octree Liquid Simulator With Adaptive Surface Resolution
