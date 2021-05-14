@@ -82,7 +82,7 @@ One of the co-authors of the AnisoMPM paper is a friend of a friend of mine! Sma
 I made these using Monster Mash! Still somewhat limited, but definitely a cool
 demo.
 
-<center><img src="../images/failed1.png" style="height:350px"></center>
+<!--<center><img src="../images/failed1.png" style="height:350px"></center>-->
 <center><img src="../images/yay.png" style="height:350px"></center>
 
 I feel like I should take a MechE class on fluids and/or stress analysis, seems
