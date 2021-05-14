@@ -92,7 +92,7 @@ like that knowledge would be very helpful for simulation projects.
 I presented the paper: A Practical Octree Liquid Simulator With Adaptive Surface Resolution
 by Ryoichi Ando and Christopher Batty.
 
-[Presentation:] (https://docs.google.com/presentation/d/1zY2X1k7xijIj54G-MsUvgtDtAX3RoaoV-HaeBR79uUA/edit?usp=sharing)
+[Presentation:](https://docs.google.com/presentation/d/1zY2X1k7xijIj54G-MsUvgtDtAX3RoaoV-HaeBR79uUA/edit?usp=sharing)
 
 ### Lecture 18: More Fluids
 The Advection Reflection Solver paper seems pretty awesome, the idea of choosing
