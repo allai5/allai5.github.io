@@ -4,7 +4,17 @@ title: 15-464 Technical Animation
 ---
 
 ### Lecture 26: Learning
-TODO
+More machine learning + computer graphics.
+
+It will certainly be interesting to see how future computer graphics research
+will be infiltrated by ML/deep learning strategies. With already pretty
+compelling mocap data results, I personally think it would be interesting to see
+if we could use mocap data and one of the previous papers on modeling a primal
+skeleton to come up with an even better general model of teh human body.
+
+There's also all the CNN works on facial detection and differentiable rendering
+frameworks - these are certainly exciting times to be living in for a computer
+graphics enthuisiasts.
 
 ### Lecture 25: More Character Simulation
 We went over this paper today:
@@ -58,7 +68,15 @@ image --> sound waves, and then somehow regenerate a face from those sound waves
 again...probably not very possible but that would be so cool.
 
 ### Lecture 21: Paper Session IV and More Deformables
-TODO
+Frequency Domain Smoke Guiding is an amazing idea. There are so many cool
+applications in signal processing by using the frequency domain/complex plane,
+and it's wonderful to see some semblance of my ECE degree making its way into
+computer graphics. I would be interested in seeing this idea in conjunction with
+the octree liquid simulator paper that I presented; the paper had varying
+discretization resolutions for varying levels of detail of fluid simulation, and
+I'm wondering if there's some way to marry those two ideas together.
+
+One of the co-authors of the AnisoMPM paper is a friend of a friend of mine! Small world...
 
 ### Lecture 20: Deformables
 I made these using Monster Mash! Still somewhat limited, but definitely a cool
